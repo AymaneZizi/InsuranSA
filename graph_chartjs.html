@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
-<!-- Mirrored from webapplayers.com/inspinia_admin-v2.7.1/graph_chartjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 10:20:58 GMT -->
 <head>
 
     <meta charset="utf-8">
@@ -56,57 +54,68 @@
 
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.7.1/search_results.html">
-                <div class="form-group">
-                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                </div>
-            </form>
-        </div>
-            <ul class="nav navbar-top-links navbar-right">
-                <li>
-                    <span class="m-r-sm text-muted welcome-message">Welcome to InsuranSA Admin Theme.</span>
-                </li>
-                
-
-
-                <li>
-                    <a href="login.html">
-                        <i class="fa fa-sign-out"></i> Log out
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                            <form role="search" class="navbar-form-custom" action="javascript:shivam()">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="search" style="width: 900px">
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <span class="m-r-sm text-muted welcome-message">Welcome to Insurance</span>
+                            </li>
+                        
+            
+            
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out"></i> Log out
+                                </a>
+                            </li>
+                        </ul>
+            
+                    </nav>
         </div>
         <div class="row wrapper border-bottom white-bg page-heading">
-            <div class="col-lg-10">
-                <h2>Chart.js</h2>
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="index-2.html">Home</a>
-                    </li>
-                    <li>
-                        <a>Graphs</a>
-                    </li>
-                    <li class="active">
-                        <strong>Chart</strong>
-                    </li>
-                </ol>
+                <div class="col-lg-12">
+                    <h2>Input Discounts</h2>
+                            <div class="ibox-content">
+                                <form role="form" class="form-inline">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Discount 2019" id="discount1"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Discount 2020" id="discount2"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Discount 2021" id="discount3"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Discount 2022" id="discount4"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Discount 2023" id="discount5"
+                                               class="form-control">
+                                    </div>
+                                    <button class="btn btn-white" type="submit">Submit</button>
+                                </form>
+                            </div>
+                </div>
             </div>
-            <div class="col-lg-2">
-
-            </div>
-        </div>
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Line Chart Example
-                                <small>With custom colors.</small>
+                            <h5>Line Chart 
+                                <!-- <small>With custom colors.</small> -->
                             </h5>
                         </div>
                         <div class="ibox-content">
@@ -119,7 +128,7 @@
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Bar Chart Example</h5>
+                            <h5>Bar Chart </h5>
                         </div>
                         <div class="ibox-content">
                             <div>
@@ -129,57 +138,16 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Polar Area</h5>
-
-                        </div>
-                        <div class="ibox-content">
-                            <div class="text-center">
-                                <canvas id="polarChart" height="140"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Pie </h5>
-
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="doughnutChart" height="140"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Radar Chart Example</h5>
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="radarChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
         </div>
         <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
+                <div class="pull-right">
+                </div>
+                <div>
+                    <strong>Copyright</strong>  2019
+                  
+                </div>
             </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2017
-            </div>
-        </div>
 
         </div>
         </div>
@@ -201,7 +169,180 @@
     <script src="js/demo/chartjs-demo.js"></script>
 
 </body>
+<script>
+        function shivam() {
+            var filter={
+            }
+            var p = document.getElementById('search').value
+            var splited = p.split(' and ')
+            var k =0
+            for(k=0;k<splited.length;k++)
+            {
+                var result = splited[k].split(' = ')
+                filter[result[0]]=result[1]
+            }
+            console.log(filter)
+        }
+        
+                $(document).ready(function(){
+        
+        var data = [  
+           {  
+              "Name":"Ebhardt, Johannes",
+              "Standort":"Berlin",
+              "Endalter":63,
+              "year":{  
+                 "2019":{
+                    "DBOBOY":2356422363484638462834682436,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2020":{
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2021":{  
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2022":{  
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2023":{ 
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 }
+              }
+           },
+              {  
+              "Name":"Lüde, Amelie",
+              "Standort":"Münster",
+              "Endalter":63,
+              "year":{  
+                 "2019":{
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2020":{
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2021":{  
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2022":{  
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 },
+                 "2023":{ 
+                    "DBOBOY":12312,
+                    "CurrentServiceCost":1312323,
+                    "InterestCost":132213,
+                    "Contributions":123312,
+                    "Benefitspaid":2342423,
+                    "Remeasurements":23423423,
+                    "DBOEOY":23423432
+                 }
+              }
+           }
+        ]
+        
+        var dta1 = ''
+        var dta2 = ''
+        var dta3 = ''
+        var dta4 = ''
+        var dta5 = ''
+        
+            var i = 0
+            var element = ""
+            for(i=0;i< data.length;i++) {
+            element = data[i]
+            dta1+='<tr class="gradeX"><td>'+element.Name+'</td><td>'+element.Standort+'</td><td>'+element.Endalter+'</td><td>'+element.year["2019"].DBOBOY+'</td><td>'+element.year["2019"].CurrentServiceCost+'</td><td>'+element.year["2019"].InterestCost+"</td><td>"+element.year["2019"].Contributions+"</td><td>"+element.year["2019"].Benefitspaid+"</td><td>"+element.year["2019"].Remeasurements+"</td><td>"+element.year["2019"].DBOEOY+"</td></tr>"
+            dta2+='<tr class="gradeX"><td>'+element.Name+'</td><td>'+element.Standort+'</td><td>'+element.Endalter+'</td><td>'+element.year["2020"].DBOBOY+'</td><td>'+element.year["2020"].CurrentServiceCost+'</td><td>'+element.year["2020"].InterestCost+"</td><td>"+element.year["2020"].Contributions+"</td><td>"+element.year["2020"].Benefitspaid+"</td><td>"+element.year["2020"].Remeasurements+"</td><td>"+element.year["2020"].DBOEOY+"</td></tr>"
+            dta3+='<tr class="gradeX"><td>'+element.Name+'</td><td>'+element.Standort+'</td><td>'+element.Endalter+'</td><td>'+element.year["2021"].DBOBOY+'</td><td>'+element.year["2021"].CurrentServiceCost+'</td><td>'+element.year["2021"].InterestCost+"</td><td>"+element.year["2021"].Contributions+"</td><td>"+element.year["2021"].Benefitspaid+"</td><td>"+element.year["2021"].Remeasurements+"</td><td>"+element.year["2021"].DBOEOY+"</td></tr>"
+            dta4+='<tr class="gradeX"><td>'+element.Name+'</td><td>'+element.Standort+'</td><td>'+element.Endalter+'</td><td>'+element.year["2022"].DBOBOY+'</td><td>'+element.year["2022"].CurrentServiceCost+'</td><td>'+element.year["2022"].InterestCost+"</td><td>"+element.year["2022"].Contributions+"</td><td>"+element.year["2022"].Benefitspaid+"</td><td>"+element.year["2022"].Remeasurements+"</td><td>"+element.year["2022"].DBOEOY+"</td></tr>"
+            dta5+='<tr class="gradeX"><td>'+element.Name+'</td><td>'+element.Standort+'</td><td>'+element.Endalter+'</td><td>'+element.year["2023"].DBOBOY+'</td><td>'+element.year["2023"].CurrentServiceCost+'</td><td>'+element.year["2023"].InterestCost+"</td><td>"+element.year["2023"].Contributions+"</td><td>"+element.year["2023"].Benefitspaid+"</td><td>"+element.year["2023"].Remeasurements+"</td><td>"+element.year["2023"].DBOEOY+"</td></tr>"
+        }
+        
+        document.getElementById("dta1").innerHTML = dta1
+        document.getElementById("dta2").innerHTML = dta2
+        document.getElementById("dta3").innerHTML = dta3
+        document.getElementById("dta4").innerHTML = dta4
+        document.getElementById("dta5").innerHTML = dta5
+        
+        
+                    $('.dataTables-example').DataTable({
+                        pageLength: 25,
+                        responsive: true,
+                        dom: '<"html5buttons"B>lTfgitp',
+                        buttons: [
+                            { extend: 'copy'},
+                            {extend: 'csv'},
+                            {extend: 'excel', title: 'ExampleFile'},
+                            {extend: 'pdf', title: 'ExampleFile'},
+        
+                            {extend: 'print',
+                             customize: function (win){
+                                    $(win.document.body).addClass('white-bg');
+                                    $(win.document.body).css('font-size', '10px');
+        
+                                    $(win.document.body).find('table')
+                                            .addClass('compact')
+                                            .css('font-size', 'inherit');
+                            }
+                            }
+                        ]
+        
+                    });
+        
+                });
+        
+            </script>
 
-
-<!-- Mirrored from webapplayers.com/inspinia_admin-v2.7.1/graph_chartjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 10:20:59 GMT -->
 </html>
